@@ -225,6 +225,17 @@
     font-size: 1rem;
   }
   
+  .dev-badge {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-weight: 600;
+  }
+  
   /* Version Info */
   .version-info {
     margin-top: 2rem;
@@ -361,13 +372,13 @@
         <div class="download-options">
           <div class="download-option">
             <div class="option-header">
-              <span class="option-title">Compiled Executable</span>
+              <span class="option-title">Compiled Application</span>
               <span class="option-size">73.4 MB</span>
             </div>
-            <p>Ready-to-run installer with all dependencies included.</p>
-            <a href="downloads/NotesIDE-Windows.tar.xz" download class="download-btn">
+            <p>Ready-to-run application with all dependencies included.</p>
+            <a href="downloads/NotesIDE-Windows.zip" download class="download-btn">
               <i class="fas fa-download"></i>
-              Download .exe
+              Download .zip
             </a>
           </div>
           
@@ -377,7 +388,7 @@
               <span class="option-size">34.6 MB</span>
             </div>
             <p>Complete source code for developers and custom builds.</p>
-            <a href="downloads/SOURCE-noteside-Windows.tar.xz" download class="download-btn">
+            <a href="downloads/SOURCE-noteside-Windows.zip" download class="download-btn">
               <i class="fas fa-code"></i>
               Download Source
             </a>
@@ -404,9 +415,9 @@
               <span class="option-size">17.9 MB</span>
             </div>
             <p>Pre-compiled binary for most Linux distributions.</p>
-            <a href="downloads/NotesIDE-Linux.tar.xz" download class="download-btn">
+            <a href="downloads/NotesIDE-Linux.zip" download class="download-btn">
               <i class="fas fa-download"></i>
-              Download .tar.gz
+              Download .zip
             </a>
           </div>
           
@@ -416,7 +427,7 @@
               <span class="option-size">11.8 MB</span>
             </div>
             <p>Complete source code with build instructions.</p>
-            <a href="downloads/SOURCE-NotesIDE-Linux.tar.xz" download class="download-btn">
+            <a href="downloads/SOURCE-NotesIDE-Linux.zip" download class="download-btn">
               <i class="fas fa-code"></i>
               Download Source
             </a>
@@ -439,11 +450,24 @@
         <div class="download-options">
           <div class="download-option">
             <div class="option-header">
-              <span class="option-title">Source Code-UNDER DVLP</span>
+              <span class="option-title">macOS Application</span>
+              <span class="option-size">42.3 MB</span>
+            </div>
+            <p>Application bundle for both Intel and Apple Silicon Macs.</p>
+            <a href="downloads/NotesIDE-MacOS.zip" download class="download-btn">
+              <i class="fas fa-download"></i>
+              Download .zip
+            </a>
+          </div>
+          
+          <div class="download-option">
+            <div class="option-header">
+              <span class="option-title">Source Code</span>
+              <span class="dev-badge">UNDER DVLP</span>
               <span class="option-size">246 KB</span>
             </div>
-            <p>Complete source code.</p>
-            <a href="downloads/MacOS.tar.xz" download class="download-btn">
+            <p>Complete source code for developers and custom builds.</p>
+            <a href="downloads/SOURCE-Noteside-MacOS.zip" download class="download-btn">
               <i class="fas fa-code"></i>
               Download Source
             </a>
@@ -453,11 +477,11 @@
     </div>
     
     <div class="version-info">
-      <h4>Version 1.7.2 (Latest Release)</h4>
+      <h4>Version 1.7.3 (Latest Release)</h4>
       <ul>
-        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Compiled app for ease of use</li>
-        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Steped from source-code to true-app</li>
-        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>So far, True app works for: Windows/Linux, source code is available for all OS including MacOS</li>
+        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Compiled app for all the Operating systems</li>
+        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>Dependencies {chrome, python..} will be accessed later</li>
+        <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>match/case will be replaced with if/else</li>
         <li><i class="fas fa-check" style="color: var(--primary-color); margin-right: 8px;"></i>View all releases on <a href="https://github.com/unhingednerdxcx/NotesIDE" target="_blank" style="color: var(--secondary-color);">GitHub</a></li>
       </ul>
     </div>
@@ -502,17 +526,6 @@
       
       // Simple tracking (replace with your analytics)
       console.log(`Download initiated: ${platform} - ${type}`);
-      
-      // You could send this to your analytics service
-      // fetch('/api/track-download', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({
-      //     platform: platform,
-      //     type: type,
-      //     timestamp: new Date().toISOString()
-      //   })
-      // });
     });
   });
 </script>
