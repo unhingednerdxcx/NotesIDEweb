@@ -236,6 +236,41 @@
     font-weight: 600;
   }
   
+  /* Compatibility Info */
+  .compatibility-info {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0fff0;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  .compatibility-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .compatibility-info ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .compatibility-info li {
+    padding: 0.2rem 0;
+    font-size: 0.85rem;
+    color: var(--light-text);
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .compatibility-info li i {
+    color: var(--primary-color);
+    margin-right: 8px;
+    margin-top: 3px;
+    font-size: 0.75rem;
+  }
+  
   /* Version Info */
   .version-info {
     margin-top: 2rem;
@@ -411,6 +446,18 @@
         <div class="download-options">
           <div class="download-option">
             <div class="option-header">
+              <span class="option-title">Debian Package</span>
+              <span class="option-size">TBD</span>
+            </div>
+            <p>For Debian-based distributions like Ubuntu, Linux Mint, etc.</p>
+            <a href="downloads/NotesIDE-deb.zip" download class="download-btn">
+              <i class="fas fa-download"></i>
+              Download .deb
+            </a>
+          </div>
+          
+          <div class="download-option">
+            <div class="option-header">
               <span class="option-title">Compiled Binary</span>
               <span class="option-size">17.9 MB</span>
             </div>
@@ -419,6 +466,32 @@
               <i class="fas fa-download"></i>
               Download .zip
             </a>
+          </div>
+          
+          <div class="download-option">
+            <div class="option-header">
+              <span class="option-title">RedHat Collections</span>
+              <span class="option-size">Multiple</span>
+            </div>
+            <p>For RHEL, CentOS, Fedora, and other RPM-based distributions.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+              <a href="downloads/RedHat-Collections/NotesIDE-1.7.2-2.el8.x86_64.zip" download class="download-btn" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-download"></i>
+                RHEL 8
+              </a>
+              <a href="downloads/RedHat-Collections/NotesIDE-1.7.2-2.el9.x86_64.zip" download class="download-btn" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-download"></i>
+                RHEL 9
+              </a>
+              <a href="downloads/RedHat-Collections/NotesIDE-1.7.2-2.el10.x86_64.zip" download class="download-btn" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-download"></i>
+                RHEL 10
+              </a>
+              <a href="downloads/RedHat-Collections/NotesIDE-1.7.2-2.fc40.x86_64.zip" download class="download-btn" style="font-size: 0.8rem; padding: 6px 12px;">
+                <i class="fas fa-download"></i>
+                Fedora 40
+              </a>
+            </div>
           </div>
           
           <div class="download-option">
@@ -432,6 +505,14 @@
               Download Source
             </a>
           </div>
+        </div>
+        
+        <div class="compatibility-info">
+          <h4>Linux Distribution Compatibility</h4>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Supported most Linux distros (Ubuntu, RockyOS, Manjaro)</li>
+            <li><i class="fas fa-check-circle"></i> Other Deb-based, RPM-based, Arch-based are expected to work</li>
+          </ul>
         </div>
       </div>
       
